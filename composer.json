@@ -1,0 +1,27 @@
+{
+    "name": "iterato/assessment",
+    "description": "Iterato Assessment",
+    "authors": [
+        {
+            "name": "S M Sarwar Hasan",
+            "email": "smsarwar.cse@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "application/"
+        }
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "3.*"
+    },
+    "scripts": {
+        "checkpsr2": "phpcbf --standard=\"psr2\" application/core/CORE_Model.php",
+        "makejs":"browserify assets/js/dev/main.js | uglifyjs > assets/js/main.min.js",
+        "watchjs":"watchify assets/js/dev/main.js -o  assets/js/main.min.js"
+    },
+    "require": {
+        "guzzlehttp/guzzle": "^6.5"
+    }
+
+}
