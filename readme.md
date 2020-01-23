@@ -21,4 +21,9 @@ I maintained psr2 in my working directory. Also developed a simple ORM, which is
 * Task api is http(s)://domain/api/task , it accepted post and put as required
 * for put method endpoint is http(s)://domain/api/task/<task_id>, this <task_id> is task id
  
+## Option description
+* Dashboard controller located in application/controllers/Dashboard.php
+* API controller located in  application/controllers/api/task.php
+
+#### Thank you
 
